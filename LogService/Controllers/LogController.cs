@@ -8,8 +8,6 @@ namespace LogService.Controllers
     [Route("[controller]")]
     public class LogController : ControllerBase
     {
-        MessageBroker messageBroker = new MessageBroker();
-
         [HttpGet]
         [Route("getTransactionLog")]
         public async Task<ActionResult<bool>> GetTransactionLog()
